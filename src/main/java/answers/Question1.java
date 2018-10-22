@@ -11,7 +11,7 @@ public class Question1 {
 			
 			for (int i = 0; i < arraySize; i++) {
 				int portfolio = portfolios[i];
-				if(portfolio < 0 ||portfolio > pMaxDecimalValue)
+				if(portfolio > pMaxDecimalValue)
 					return -1;
 				for (int j = i+1; j < arraySize; j++) {
 					maxEvaluationValue = Math.max(bitwiseXor(portfolio, portfolios[j]),maxEvaluationValue);
